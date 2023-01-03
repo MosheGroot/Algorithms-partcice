@@ -36,3 +36,15 @@ Actually, the best way to change `h` is unspecified, but one easy way to do it i
 The efficiency of this algorithm is difficult to calculate, but it is guaranteed to be better than a simple `insertion sort`. 
 
 ![Shell sort gif from the wikipedia](https://upload.wikimedia.org/wikipedia/commons/d/d8/Sorting_shellsort_anim.gif?20140912155123)
+
+## Knuth shuffle
+
+It is not about sorting but about permutations, but I decided to put it here, near the sorting algorithms.
+
+The point is to shuffle the array randomly to get a uniform permutation. The best way to do it in linear time is:
+* take the current element with index `i`
+* take a random index `j` between `0` and `i`
+* swap `i` and `j` elements
+* continue with the next `i`
+
+It is important to take a random index of an element to swap with between `0` and `i`, and not across the entire array. Otherwise, permutation will not become uniform (there is a way to prove it, but not here).
