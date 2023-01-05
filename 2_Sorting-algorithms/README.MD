@@ -48,3 +48,14 @@ The point is to shuffle the array randomly to get a uniform permutation. The bes
 * continue with the next `i`
 
 It is important to take a random index of an element to swap with between `0` and `i`, and not across the entire array. Otherwise, permutation will not become uniform (there is a way to prove it, but not here).
+
+## Merge sort
+
+Basic `N*lgN` sort with a simple idea:
+* divide an array in half
+* sort recursively both parts
+* merge them into the one array
+
+Efficiency: `N*lgN` compares and `6*N*lgN` array accesses. 
+
+![Merge sort gif from the wikipedia](https://cdn.emre.me/sorting/merge_sort.gif)
