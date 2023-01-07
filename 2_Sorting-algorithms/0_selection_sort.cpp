@@ -37,7 +37,7 @@ void SelectionSort()
 int main() {
     FillArray();
     PrintArray();
-    
+
     SelectionSort();
     PrintArray();
 

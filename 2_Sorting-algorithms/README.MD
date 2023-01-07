@@ -7,7 +7,7 @@ Basic `N^2` sort:
 * swap it with first unsorted
 * continue
 
-Efficiency: `~N^2 / 2` compares and `N` exchanges 
+Efficiency: `~N^2 / 2` compares and `N` exchanges.
 
 ![Selection sort gif from the wikipedia](https://media.tenor.com/R6mBrn0nQ1MAAAAC/sort-graph.gif)
 
@@ -21,7 +21,7 @@ Basic, but more efficient `N^2` sort:
 
 Efficienty: `~N^2 / 4` compares and `~N^2 / 4` exchanges on average.
 
-The main problem with this algorithm is the worst case, when we have to make `N` exchanges to move some element from the end to the beginning of the array. The next sort solves this problem. 
+The main problem with this algorithm is the worst case, when we have to make `N` exchanges to move some element from the end to the beginning of the array. The next sort solves this problem.
 
 ![Insertion sort gif from the wikipedia](https://upload.wikimedia.org/wikipedia/commons/4/42/Insertion_sort.gif)
 

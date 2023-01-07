@@ -35,7 +35,7 @@ void InsertionSort()
 int main() {
     FillArray();
     PrintArray();
-    
+
     InsertionSort();
     PrintArray();
 

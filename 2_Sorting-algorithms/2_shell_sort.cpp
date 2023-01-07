@@ -24,7 +24,7 @@ void ShellSort()
     int h = 1;
     while (h < N / 3)
         h = h * 3 + 1; // 3x + 1 sequence: 1, 4, 13, 40, 121, ...
-    
+
     while (h >= 1)
     {
         for (int last_unsorted = h; last_unsorted < N; ++last_unsorted)
@@ -44,7 +44,7 @@ void ShellSort()
 int main() {
     FillArray();
     PrintArray();
-    
+
     ShellSort();
     PrintArray();
 

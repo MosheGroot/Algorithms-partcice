@@ -29,15 +29,15 @@ int main()
     std::cout << "Enter these elements:" << std::endl;
     for (auto& elem: container)
         std::cin >> elem;
-    
+
     std::sort(container.begin(), container.end());
     std::cout << "\nYour's sorted array:\n";
     for (const auto& elem: container)
         std::cout << elem << ' ';
-    
+
     int value_to_find;
     std::cout << "\n\nEnter a value to find: "; std::cin >> value_to_find;
     std::cout << "Index of this value is: " << BinarySearch(container, value_to_find) << std::endl;
-    
+
     return 0;
 }

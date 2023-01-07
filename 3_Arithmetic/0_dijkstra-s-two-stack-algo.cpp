@@ -26,7 +26,7 @@ int solve_equation(std::string_view equation)
     };
     std::stack<int>  nums;
     std::stack<char> ops;
-    
+
     auto make_operation = [&]{
         int b = nums.top(); nums.pop();
         int a = nums.top(); nums.pop();
@@ -77,7 +77,7 @@ int solve_equation(std::string_view equation)
         }
         equation.remove_prefix(size_of_prefix_to_remove);
     }
-    
+
     while (ops.size())
         make_operation();
     return nums.top();
@@ -87,7 +87,7 @@ int main(int argc, char* argv[])
 {
     if (argc != 2)
         std::cerr << "invalid number of arguments, please provide only one equation as string" << std::endl;
-    
+
     std::cout << "The anwser is: " << solve_equation(argv[1]) << std::endl;
 
     return 0;

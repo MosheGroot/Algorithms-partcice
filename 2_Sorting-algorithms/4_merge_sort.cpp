@@ -66,7 +66,7 @@ public:
 int main() {
     FillArray();
     PrintArray();
-    
+
     MergeSort::Sort(array, N);
     PrintArray();
 
