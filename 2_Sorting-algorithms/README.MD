@@ -56,6 +56,18 @@ Basic `N*lgN` sort with a simple idea:
 * sort recursively both parts
 * merge them into the one array
 
-Efficiency: `N*lgN` compares and `6*N*lgN` array accesses. 
+Efficiency: `N*lgN` compares and `6*N*lgN` array accesses, but it requires extra space with `N` size.
 
 ![Merge sort gif from the wikipedia](https://cdn.emre.me/sorting/merge_sort.gif)
+
+
+## Quick sort
+
+Favorite `QuickSort` with improved `N*lgN` efficiency. Algorithm can be described with the next steps:
+* To ensure performance, shuffle the array
+* Take the pivot, and move all the elements that are smaller than the pivot to the left part, and those that are larger to the right
+* Sort these parts (`[l; pivot)` and `(pivot; j]`) recursively
+
+Efficiency: `N*lgN` compares (`~1/2 N^2` in worst case, but it can be fixed by shuffling) and zero extra space.
+
+![Quick sort gif from the wikipedia](https://upload.wikimedia.org/wikipedia/commons/6/6a/Sorting_quicksort_anim.gif)
