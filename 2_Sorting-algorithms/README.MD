@@ -71,3 +71,7 @@ Favorite `QuickSort` with improved `N*lgN` efficiency. Algorithm can be describe
 Efficiency: `N*lgN` compares (`~1/2 N^2` in worst case, but it can be fixed by shuffling) and zero extra space.
 
 ![Quick sort gif from the wikipedia](https://upload.wikimedia.org/wikipedia/commons/6/6a/Sorting_quicksort_anim.gif)
+
+Also, there is a way to improve the sorting of arrays with a lot of duplicates. This case can be handled by Dijkstra's 3-way partitioning (the rest of the algorithm is the same):
+
+![3-way partitioning](https://media.geeksforgeeks.org/wp-content/uploads/Threewaypartitioning.png)
