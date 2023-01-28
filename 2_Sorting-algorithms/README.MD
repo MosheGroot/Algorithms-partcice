@@ -75,3 +75,17 @@ Efficiency: `N*lgN` compares (`~1/2 N^2` in worst case, but it can be fixed by s
 Also, there is a way to improve the sorting of arrays with a lot of duplicates. This case can be handled by Dijkstra's 3-way partitioning (the rest of the algorithm is the same):
 
 ![3-way partitioning](https://media.geeksforgeeks.org/wp-content/uploads/Threewaypartitioning.png)
+
+## Heap sort
+
+Interesting sort algorithm that uses the maximum binary heap to find the maximum at each iteration.Algorithm can be described with the next steps:
+* Create a maximum binary heap in-place.
+* Take the maximum from the heap and place it at the end of the sorting area.
+* Handle the maximum heap structure on the remaining `N - 1` elements.
+* Repeat until the end.
+
+Efficiency:
+* for heap contruction `<= 2N` compares and exchanges
+* for heap sort `<= 2N*lgN` compares and exchanges
+* in-place
+* `N*lgN` in worst-case
